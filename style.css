@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(imagens/fundo.jpg);
+    background-size: 128em 50em;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+a{
+    background-color: yellow;
+    text-decoration: underline;
+    color: black;
+}
+
+a::after{
+    content: "📃";
+}
+
+strong{
+    color: rgba(255, 255, 255, 0.81);
+}
+
+#principal{
+    background-color: rgb(165, 142, 58);
+    background-image: url(imagens/matoemvolta.png);
+    background-size: 9em;
+    background-position: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    height: 4em;
+    min-width: 400px;
+    max-width: 70%;
+    padding-top: 1em;
+    margin: 1em auto 6em;
+}
+
+#principal > h1{
+    text-align: center;
+    text-size-adjust: unset;
+    color: #332413;
+    margin-bottom: 1em;
+}
+
+#principal > nav{
+    display: inline-block;
+    width: 89.4em;
+    min-height: 50px;
+    height: 50px;
+}
+
+#navlist{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1em;
+}
+
+#navlist > li > h1{
+    pointer-events: auto;
+    background-color: rgb(165, 142, 58);
+    border: 2px dashed black;
+    color: #4e4235;
+    width: 6em;
+    height: 2.5em;
+}
+
+#navlist > li > h1:hover{
+    background-color: rgb(159, 53, 32);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px 0px;
+    text-align: center;
+    width: 75%;
+    height: 150em;
+    padding: 1.5em;
+    margin: auto auto 2em auto;
+}
+
+main > article > h1{
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right,white,rgba(165, 42, 42, 0.374),white);
+}
+
+main > article > p{
+    margin-bottom: 20px;
+}
+
+.exemplos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    background-color: lightgray;
+    color: rgb(104, 39, 21);
+    height: 21em;
+}
+
+.exemplos > ul{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exemplos > ul > li{
+    list-style: none;
+    text-align: left;
+    padding: 0.5em 2em;
+    width: 2em;
+    margin: auto;
+    background-color: gray;
+    border: 1px solid black;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.205);
+    cursor: pointer;
+}
+
+.exemplos > ul > li:hover{
+    background-color: rgb(183, 224, 143);
+    color: rgb(183, 180, 25);
+    transition: 0.3s
+}
+
+.exemplos > ul > li:active{
+    background-color: rgb(183, 224, 143);
+    color: rgb(183, 180, 25);
+}
+
+.exemploimg{
+    margin-top: 1em;
+}
+
+.ajustavel{
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 2em;
+}
+
+footer{
+    background-color: #000000;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
